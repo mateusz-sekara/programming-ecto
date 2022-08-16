@@ -16,4 +16,3 @@ defmodule MusicDB.Repo do
   end
 
 end
-

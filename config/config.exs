@@ -32,12 +32,22 @@ use Mix.Config
 config :music_db, :ecto_repos, [MusicDB.Repo]
 
 config :music_db, MusicDB.Repo,
-  # username: your_username,
-  # password: your_password,
+  username: "ecto",
+  password: "password",
   database: "music_db",
   hostname: "localhost",
+  port: 6500,
   migration_lock: nil # this is not normally needed - we put it here to support an example of
                       # creating an index with the `concurrently` option set to true
+
+## MySQL setup - update MusiDB.Repo adapter as well
+# config :music_db, MusicDB.Repo,
+#   username: "ecto",
+#   password: "password",
+#   database: "music_db",
+#   hostname: "localhost",
+#   port: 6501,
+#   migration_lock: nil
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.

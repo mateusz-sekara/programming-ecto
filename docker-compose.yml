@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  postgres_db:
+    image: postgres
+    restart: always  
+    environment:
+      POSTGRES_USER: ecto
+      POSTGRES_PASSWORD: password
+    ports:
+      - '6500:5432'
+  mysql_db:
+    image: mysql
+    restart: always
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_ROOT_PASSWORD: supersecret
+      MYSQL_USER: ecto
+      MYSQL_PASSWORD: password
+      MYSQL_DATABASE: music_db
+    ports:
+      - '6501:3306'
