@@ -31,10 +31,10 @@ defmodule MusicDB.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:ecto_sql, "~> 3.6"},
+      {:ecto_sql, "~> 3.8"},
       {:postgrex, ">= 0.0.0"},
-      {:mariaex, ">= 0.0.0"},
-      {:jason, "~> 1.1"}
+      {:myxql, ">= 0.0.0"},
+      {:jason, "~> 1.2"}
     ]
   end
 
