@@ -17,7 +17,7 @@ defmodule MusicDB.Artist do
     field(:death_date, :date)
     timestamps()
 
-    has_many(:albums, Album)
+    has_many(:albums, Album, on_replace: :nilify)
     has_many(:tracks, through: [:albums, :tracks])
   end
 
