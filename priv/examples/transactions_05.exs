@@ -38,4 +38,3 @@ Repo.transaction(multi)
 #=>  }}
 
 assert {:ok, %{artist: %Artist{}, log: %Log{}}} = result
-
