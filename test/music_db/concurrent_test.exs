@@ -1,4 +1,4 @@
-defmodule MusicDb.ConcurrentTest do
+defmodule MusicDB.ConcurrentTest do
   use ExUnit.Case, async: true
   alias MusicDB.Repo
   alias MusicDB.Album
