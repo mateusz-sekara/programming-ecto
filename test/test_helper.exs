@@ -7,3 +7,5 @@
 # Visit http://www.pragmaticprogrammer.com/titles/wmecto for more book information.
 #---
 ExUnit.start()
+
+Ecto.Adapters.SQL.Sandbox.mode(MusicDB.Repo, :manual)
